@@ -531,11 +531,220 @@ var color = ['Red','Green','Blue','Yellow'];
 //    document.write(score[i],",");
 // }
 // -- Task 11--
-var cities_names = ["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
-var selected_cities = cities_names.slice(2,4);
-for(var i=0; i < selected_cities.length ; i++){
-   document.write(selected_cities[i],",");
+// var cities_names = ["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+// document.write("<h3>Cities list:</h3>");
+// for(var i=0; i < cities_names.length ; i++){
+//    document.write(cities_names[i],",");
+// }
+// document.write("<h3>Selected cities list:</h3>");
+// var selected_cities = cities_names.slice(2,4);
+// for(var i=0; i < selected_cities.length ; i++){
+//    document.write(selected_cities[i],",");
+// }
+// -- Task 12 --
+// var arr = ['This','is ', 'my','cat'];
+// document.write("<h3>Array</h3>");
+// for(var i=0; i < arr.length ; i++){
+//       document.write(arr[i],",");
+//    }
+// document.write("<h3>String</h3>");
+// var arr_str = arr.join(" ");
+// document.write(arr_str);
+// -- Task 13 --
+// var devices = []; 
+// var item = prompt("Enter Devices name");
+// var devices = item.split(",");
+// document.write("<h3>Devices:</h3>");
+// for(var i=0; i < devices.length ; i++ ){
+//   document.write(devices[i],",");
+// }
+// for(var i=0; i < devices.length ; i++ ){
+//    document.write("<br><strong>Output:</strong><br>");
+//    document.write(devices[i]); 
+//  }
+//-- Task 14 --
+// var devices = []; 
+// var item = prompt("Enter Devices name");
+// var devices = item.split(",");
+// document.write("<h3>Devices:</h3>");
+// for(var i=0; i < devices.length ; i++ ){
+//   document.write(devices[i],",");
+// }
+// for(var i=devices.length-1; i >= 0 ; i-- ){
+//    document.write("<br><strong>Output:</strong><br>");
+//    document.write(devices[i]); 
+//  }
+//-- Task 15 --
+// var mobile_company = ["Apple","Samsung","Motorola","Nokia","Sony","Haier"];
+// document.write("<label>Phone Manufacturers:</label><select>");
+// for(var i=0; i < mobile_company.length; i++){
+// document.write("<option value='mobile_company[i]'>",mobile_company[i],"</option>");
+// }
+// document.write("</select>");
+
+
+// ------------Chapter 17 to Chapter 20------------
+// -- Task 1 --
+//var arr = [[]];
+// -- Task 2 --
+// var arr = [[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+// for(var i=0; i < arr.length; i++){
+//    for(var j=0;j < 4; j++){
+//       document.write(arr[i][j]," ");
+//    }
+//    document.write("<br>");
+// }
+// -- Task 3 --
+// for(var i=1; i <= 10; i++){
+//    document.write(i,"<br>");
+// }
+// -- Task 4 --
+// var table_num = +prompt("Enter a number to show its multiplication table?");
+// var table_len = +prompt("Enter length multilication table");
+// document.write("Multiplication table of ",table_num);
+// document.write("Length ",table_len);
+// for(var i=1; i <= table_len; i++){
+//    document.write("<br>",table_num,"x",i," = ",table_num*i);
+// }
+// -- Task 5 --
+// fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
+// for(var i=0; i< fruits.length; i++){
+//    document.write(fruits[i],"<br>");
+// }
+// for(var i=0; i< fruits.length; i++){
+//    document.write("Element at index ",i," is ",fruits[i],"<br>");
+// }
+// -- Task 6 --
+// document.write("<strong>Counting:</strong><br>");
+// for(var i=1; i<= 15; i++){
+//    document.write(i,",");
+// }
+// document.write("<br><strong>Reverse counting:</strong><br>");
+// for(var i=10; i>= 1; i--){
+//    document.write(i,",");
+// }
+// document.write("<br><strong>Even:</strong><br>");
+// for(var i=0; i<= 20; i++){
+//    if(i%2 == 0){
+//    document.write(i,",");
+//    } 
+// }
+// document.write("<br><strong>Odd:</strong><br>");
+// for(var i=0; i<= 20; i++){
+//    if(i%2 !== 0){
+//    document.write(i,",");
+//    } 
+// }
+// document.write("<br><strong>Series:</strong><br>");
+// for(var i=1; i<= 20; i++){
+//    if(i%2 == 0){
+//    document.write(i,"k,");
+//    } 
+// }
+// -- Task 7 --
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var matchFound = "no";
+// var user_srch = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
+// for(var i=0; i< A.length; i++){
+//    if(user_srch == A[i]){
+//    document.write(A[i]," is <strong>avaliable</strong> at index ",i," in our backery");
+//    matchFound = "yes";
+//    }   
+// }
+// if(matchFound == "no"){
+//    document.write("We are sorry. ",user_srch,"is <strong> not avaliable</strong> in our backery");
+// }
+// -- Task 8 --
+// var A = [24, 53, 78, 91, 12];
+// document.write("Array items: "); 
+// for(var i=0; i< A.length; i++){
+//       document.write(A[i],","); 
+//    }
+// var max = A[0];
+// for(var i=0; i<= A.length; i++){
+//    if(A[i] > max){
+//       max = A[i];
+//    }
+// }
+// document.write("<br>The largest number is ",max);
+// -- Task 9 --
+// var A = [24, 53, 78, 91, 12];
+// document.write("Array items: "); 
+// for(var i=0; i< A.length; i++){
+//       document.write(A[i],","); 
+//    }
+// var min = A[0];
+// for(var i=0; i<= A.length; i++){
+//    if(A[i] < min){
+//       min = A[i];
+//    }
+// }
+// document.write("<br>The smallest number is ",min);
+// -- Task 10 --
+for(var i=1; i<=20;i++){
+   document.write(i*5,",")
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
