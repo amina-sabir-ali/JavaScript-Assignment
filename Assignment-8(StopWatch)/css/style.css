@@ -1,0 +1,34 @@
+.bg{
+  background-image: url('../images/bg1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.display{
+  height: 7rem !important;
+  background-color: #0a6099 !important;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 30px;;
+}
+.display h1{
+ color: bisque;
+ font-family: sans-serif;
+ font-weight: bold;
+ /* letter-spacing: 5px; */
+}
+.heading{
+  text-align: center;
+  text-transform: uppercase !important;
+  color: #004f96;
+}
+.buttons{
+  text-align: center;
+}
+.btn{
+  background-color: #004f96;
+  font-weight:bold;
+  font-size:1.3rem;
+  border-radius: 4px;
+  padding: 0.8rem;
+} 
