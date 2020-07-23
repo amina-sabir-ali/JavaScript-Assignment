@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+.phone-imgs img{
+    width: 200px;
+    height: 300px;
+    border: 1px solid red;
+    padding:1px;
+    margin-left:20px;
+}
+.phone-imgs h1{
+    color: blue;
+}
+.task-4 img{
+    width: 200px;
+    height: 200px;
+}
+.nature-images img{
+    width:200px;
+    height: 200px;
+    cursor: pointer;
+}

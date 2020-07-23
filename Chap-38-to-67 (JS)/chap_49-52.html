@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Assignment no 9</title>
+</head>
+<body>
+    <h1>Chap-49 to Chap-52</h1>
+    <!-- -------------- Chap-49 to Chap-52 -------------- -->
+    <!-- **** TASK 1 **** -->
+<div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+
+ <!--  SignUp Form Starts -->
+ <h1>SignUP Form</h1>
+ <br>
+ <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="fname">First Name</label>
+        <input type="text" class="form-control" id="fname"  placeholder="Enter First Name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lname">Last Name</label>
+        <input type="text" class="form-control" id="lname"  placeholder="Enter Last Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password">
+    </div>
+    <div class="form-group">
+        <label for="confirm_password">Password</label>
+        <input type="password" class="form-control" id="confirm_password" placeholder="Confirm password">
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <input type="submit" onclick="showInfo();" value="Sign in" class="btn btn-primary btn-block">
+  </form>
+  <!--  SignUp Form Ends -->
+
+            </div>
+            <div class="col-3"></div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <p id="showFname"></p>
+            <p id="showLname"></p>
+            <p id="showEmail"></p>
+            <p id="showPassword"></p>
+        </div>
+    </div>
+</div>
+<!-- **** TASK 2 **** -->   
+<div class="container">
+  <p id="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sit veritatis deserunt sint quae minima debitis autem ea deleniti culpa, blanditiis quis neque harum, tenetur exercitationem laudantium quos quas? Maxime?
+    <a href="javascript:void(0);" onClick="showMore();"><em>Click for more.</em></a>
+    </p>
+</div>
+
+<!-- ----------------------------------------------- -->
+<!-- **** TASK 3 **** -->
+<div class="container">
+  <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+
+<!--  Student Form Starts -->
+<h1>Student Form</h1>
+<br>
+<form onSubmit="addStdInfo();">
+<div class="form-row">
+<div class="form-group col-md-6">
+  <label for="stdname">Student Name</label>
+  <input type="text" class="form-control" id="stdname"  placeholder="Enter Name">
+</div>
+<div class="form-group col-md-6">
+  <label for="cname">Class</label>
+  <input type="text" class="form-control" id="cname"  placeholder="Enter Class Name">
+</div>
+</div>
+<input type="submit" value="ADD Record" class="btn btn-primary btn-block">
+</form>
+<!--  Student Form Ends -->
+
+      </div>
+      <div class="col-3"></div>
+</div>
+
+
+<div class="row mt-5">
+  <div class="col-3"></div>
+  <div class="col-6">
+
+    <table id="myTable" class="table table-striped table-dark" style="text-align: center;">
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Delete operation</th>
+      </tr>
+      <tr>
+        <td>Mark</td>
+        <td>CS</td>
+        <td><button type="button" class="btn btn-danger" onclick="deleteStdRecord(this);">Delete Row</button></td>
+      </tr>
+      <tr>
+        <td>Smith</td>
+        <td>SE</td>
+        <td><button type="button" class="btn btn-danger" onclick="deleteStdRecord(this);">Delete Row</button></td>
+      </tr>
+      <tr>
+        <td>George</td>
+        <td>MBA</td>
+        <td><button type="button" class="btn btn-danger" onclick="deleteStdRecord(this);">Delete Row</button></td>
+      </tr>
+    </table>
+
+  </div>
+  <div class="col-3"></div>
+
+</div>
+</div>
+
+
+    <script src="js/app4.js"></script>
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
