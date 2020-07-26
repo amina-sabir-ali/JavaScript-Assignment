@@ -1,0 +1,48 @@
+ .delbtn{
+    /* background-color: crimson;
+    color: white;
+    padding: 10px;
+    margin-left: 10px; */
+}
+.editbtn{
+    /* background-color:rgba(43, 164, 235, 0.76);
+    color: white;
+    padding: 10px;
+    margin-left: 10px; */
+    
+} 
+body{
+    background-image: url('../images/bg_pattern.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#myTodoApp{
+    color: white;
+    text-align: center !important;
+}
+.container-fluid{
+    margin-top: 2rem !important;
+}
+.main-content{
+    box-sizing: border-box;
+    width:25rem;
+    max-width:100%;
+    height:32rem;
+    max-height: 32rem;
+    background-color: rgb(194, 193, 191);
+    padding: 1rem;
+}
+.main-content h2{
+    color: black;
+}
+#todo-item:focus{
+    border: none;    
+}
+#list-item{
+    color: black;
+    list-style-type: none;
+}
+.todo_item{
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+}
