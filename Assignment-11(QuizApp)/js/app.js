@@ -73,6 +73,8 @@ function nextQues(){
 
 
     if(question_counter == question_object.length - 1){
+        sessionStorage.setItem("time",`${minutes} minutes and ${seconds} seconds`);
+        clearInterval(myTimer);
         location.href = "result.html";
         return;
     }
